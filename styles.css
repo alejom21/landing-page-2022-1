@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100;1,300;700&display=swap');
+/*IMPORTE LA FUENTE DE GOOGLE FONT (TIPO DE LETRA)*/
+body{
+    /*Imagen de fondo*/
+    background: url("https://landing.zytheme.com/siena/assets/images/background/bg-1.png");
+    background-position: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto"; /*LE DECIMOS QUE USE LA FUENTE IMPORTADA Roboto EN TODA LA PAGINA*/
+}
+
+.container{
+    padding: 0 60px;
+}
+
+header{
+    margin-top: 30px;
+    display: flex; /*Volver cajas los elementos dentro del header para manipularlas */
+}
+
+.logo{
+    display: flex; /*Volver cajas los elementos dentro del header para manipularlas */
+    /*Alineamos la caja a continuacion:*/
+    justify-content:center ;/*alinear en un sentido Horizonatl*/
+    align-items: center; /*alinear en un sentido vertical*/
+    margin: 0 30px;
+}
+
+nav{
+    flex: 1; /*Le dimos el espacio a la caja, como es la unica con flex entonces 1 seria el 100% (cualquier numero ocuparia el 100%)*/
+    display: flex; /*Volver cajas los elementos dentro del header para manipularlas */
+    flex-direction: row-reverse;
+    /*justify-content: flex-end;*//*Hace lo mismo que flex-direction: */
+    /*Le dice que empiece al final*/
+}
+
+nav ul{
+    display: flex; /*Volver cajas los elementos dentro del header para manipularlas */
+    padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: #6262a0;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+nav ul li a:hover{ /*HOVER es para ejecutar una accio cuando pasemos el mause por encima del elemento*/
+    color: #664FFA;
+}
+
+h1{
+    color: #6262a0;
+    font-size: 3em; /*Tamaño de fuente (em es un tipo de medida)*/
+    font-weight: 400; /*El grosor de la negrila*/
+    margin: 40px 0 25px; /*Margin crea espacio fuera de elemento*/
+}
+
+h3{
+    color: #6262a0;
+    font-size: 1.4em;
+    font-weight: 500; /*Negrilla*/
+    text-align: center;  
+    margin: 0;  
+}
+
+h4{
+    color: #6262a0;
+    font-size: 1.4em;
+    font-weight: 400; /*Negrilla*/
+    text-align: center;
+    padding: 20px 0; /*Padding crea espacio dentro de elemento*/
+    display: block;
+    margin: 0; /*Margin crea espacio fuera de elemento*/
+}
+
+p{
+    color: #ababc7;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+p span{
+    font-size: 0.8em;
+}
+
+p.center{ /*Clase center dentro de una p*/
+    text-align: center;
+}
+
+/*Selector de una clase (.) */
+/*.form-container{
+    padding: 40PX;
+}*/
+
+.field-form label{
+    color: #6262a0;
+    font-size: 0.95em;
+    display: block; /*Para aplicar espacios en bloques hacia abajo*/
+    margin: 5px 0;
+}
+
+.field-form input{
+    background-color: #F7F6FF;
+    color: #222;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1.05em;
+    padding: 6PX 6PX 6PX 12PX;/*ESPACIO ENTRE EL BORDE Y EL CONTENIDO*/ 
+    outline: none;/*CONTORNO*/
+    width: 100%; /*ANCHO*/
+    margin-bottom: 6px;
+}
+
+.btn-primary{
+    width: 100%; /*Para que ocupe todo el ancho de la pantalla*/
+    background-color: #664FFA;
+    border-radius: 6px;
+    color: #fff;
+    text-transform: uppercase;/*Cambiar texto de miniscula a MAYUSCULA sostenida*/
+    padding: 15px 10px; /*Espacio entre borde y contenido*/
+    border: none;
+    margin: 10px 0;
+    font-size: 0.9em;
+    font-weight: 700; /*Variar el peso (NEGRILLA) mas gruesa-menos gruesa*/
+}
+
+.btn-primary:hover{ /*HOVER es para ejecutar una accio cuando pasemos el mause por encima del elemento*/
+    background-color: #3b1df9;
+}
+
+article{
+    display: flex; /*Volver cajas los elementos dentro del header para manipularlas */
+
+}
+
+section.secc{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: hidden; /*Si intercede con otro elemento forza a ajustar el contenido al rededor de los elementos*/
+}
+
+.content-slide1{
+    flex: 65; /*Aplicamos pesos en las cajas, e este caso 65%*/
+    padding: 0 20px;
+}
+
+#box-trial{
+    flex: 35; /*Aplicamos pesos en las cajas, e este caso 35%*/
+    background-color: #fff;
+    padding: 10px 40px;
+    box-shadow: 3px 6px 8px 0px rgba(189,189,189,0.76);
+    -webkit-box-shadow: 3px 6px 8px 0px rgba(189,189,189,0.76);
+    -moz-box-shadow: 3px 6px 8px 0px rgba(189,189,189,0.76);
+}
+
+h1.center{
+    text-align: center;
+    font-size: 2em; /*Tamaño de fuente (em es un tipo de medida)*/
+    font-weight: 500; /*El grosor de la negrila*/
+    margin-top: 0;
+}
+
+.seccion2{
+    text-align: center;
+    padding-top: 20px;
+    display: flex; /*Volver cajas los elementos dentro del header para manipularlas */
+    display: block; /*Para aplicar espacios en bloques hacia abajo*/
+    
+    
+}
+
+.titulo{
+    text-align: center!important;
+    margin-right: 350px;
+    margin-left: 350px;
+    font-family: roboto,sans-serif;
+    font-weight: 500;
+    line-height: 47px;
+    margin-bottom: 80px
+}
+
+.part2{
+    display: flex; /*Volver cajas los elementos dentro del header para manipularlas */
+
+}
+
+.divuno{
+    
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.divdos{
+
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.divtres{
+
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.img{
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin-bottom: 40px;   
+}
+
+.titulos{
+    padding-bottom: 28px;
+}
